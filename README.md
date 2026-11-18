@@ -1,6 +1,7 @@
 # Week 1 Assessment - Git, Terminal and Notebook
 
 ## Project Overview
+This project delivers a comprehensive employee performance and salary analysis using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook.
 This project provides a basic employee salary analysis using Python and Pandas, maintained on the main branch.
 Employee Performance Analysis using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook.
 
@@ -39,3 +40,12 @@ Used the Jupyter %timeit magic command to measure execution time.
 
 ## Technologies Used
 Python, Pandas, NumPy, Matplotlib, Jupyter Notebook, Git and GitHub.
+
+## Analysis Workflow
+
+1. Load employee data from the CSV file using Pandas.
+2. Explore dataset dimensions, columns and statistical summaries.
+3. Calculate employee counts and average salaries by department.
+4. Filter employees based on city.
+5. Measure execution time using `%timeit`.
+6. Visualize average department salaries using Matplotlib.

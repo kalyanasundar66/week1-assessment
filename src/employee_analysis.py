@@ -178,6 +178,13 @@ plt.show()
 
 # In[ ]:
 
+# Final analysis summary
+print("\n========== FINAL ANALYSIS SUMMARY ==========")
+print("Total Employees:", len(df))
+print("Total Departments:", df["department"].nunique())
+print("Chennai Employees:", len(chennai_employees))
+print("Average Chennai Salary:", chennai_employees["salary"].mean())
+print("============================================")
 
 
 
