@@ -1,12 +1,12 @@
-# Week 1 Assessment - Git, Terminal and Notebook
+# Week 1 Assessment – Git, Terminal and Notebook
 
-## Project Overview
+## 1. Project Overview
 
-This project delivers an employee performance and salary analysis using Python, Pandas, NumPy, Matplotlib, and Jupyter Notebook.
+This project demonstrates employee performance and salary analysis using Python, Pandas, NumPy, Matplotlib, and Jupyter Notebook.
 
-It demonstrates data exploration, department-wise salary analysis, city-based employee filtering, data visualization, Git version control, and terminal operations.
+It covers data exploration, department-wise salary analysis, city-based employee filtering, data visualization, performance measurement, Git version control, branching, merge conflict resolution, and terminal operations.
 
-## Project Structure
+## 2. Project Structure
 
 ```text
 week1-assessment/
@@ -29,87 +29,151 @@ week1-assessment/
 └── README.md
 ```
 
-## Setup Instructions
+## 3. Setup Instructions
 
-### 1. Clone the repository
+### Step 1: Clone the Repository
 
 ```bash
+# Clone the Week 1 assessment repository
 git clone https://github.com/kalyanasundar66/week1-assessment.git
 ```
 
-### 2. Navigate to the project
+### Step 2: Navigate to the Project Directory
 
 ```bash
+# Open the cloned project folder
 cd week1-assessment
 ```
 
-### 3. Install required libraries
+### Step 3: Install Required Libraries
 
 ```bash
-pip install pandas numpy matplotlib notebook nbconvert
+# Install the libraries required for data analysis and notebooks
+python -m pip install pandas numpy matplotlib notebook nbconvert
 ```
 
-### 4. Start Jupyter Notebook
+### Step 4: Start Jupyter Notebook
 
 ```bash
+# Install 
+# Launch the Jupyter Notebook server
+
+python -m pip install notebook
+
 python -m notebook
 ```
 
-### 5. Open the analysis notebook
+### Step 5: Open the Analysis Notebook
 
-Open `notebooks/employee_analysis.ipynb` and run the notebook cells.
+Open the following notebook in Jupyter:
 
-### 6. Run the exported Python script
+```text
+notebooks/employee_analysis.ipynb
+```
+
+Run the notebook cells sequentially to perform employee data analysis.
+
+### Step 6: Execute the Python Script
 
 ```bash
+# Run the exported Python analysis script
 python src/employee_analysis.py
 ```
 
-## Key Findings
+## 4. Key Findings
+
+The employee dataset analysis produced the following findings:
 
 1. The dataset contains **8 employees** across **4 departments**.
 2. The IT department has the highest employee count, with **3 employees**.
 3. Finance has the highest average salary of **INR 90,000**.
-4. Chennai has **4 employees** with an average salary of **INR 54,500**.
+4. Chennai has **4 employees**, with an average salary of **INR 54,500**.
 5. Department-wise salary analysis was performed using Pandas and visualized using Matplotlib.
 
-## Performance Measurement
+## 5. Performance Measurement
 
-Used the Jupyter `%timeit` magic command to measure the execution time of the department-wise average salary calculation.
+Used the Jupyter Notebook `%timeit` magic command to measure the execution time of the department-wise average salary calculation.
 
-## Technologies Used
+Example:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Jupyter Notebook
-- Git and GitHub
+```python
+# Measure the execution time of department-wise average salary calculation
+%timeit df.groupby("department")["salary"].mean()
+```
 
-## Analysis Workflow
+This helped evaluate the execution performance of the Pandas operation.
+
+## 6. Analysis Workflow
+
+The project follows these steps:
 
 1. Load employee data from the CSV file using Pandas.
 2. Explore dataset dimensions, columns, and statistical summaries.
 3. Calculate employee counts and average salaries by department.
-4. Filter employees based on city.
-5. Measure execution time using `%timeit`.
-6. Visualize average department salaries using Matplotlib.
+4. Filter employees based on their city.
+5. Measure execution time using the `%timeit` command.
+6. Visualize department-wise average salaries using Matplotlib.
+7. Export the analysis into a Python script and report.
 
-## Git Workflow
+## 7. Git Workflow and Version Control
 
-- Created a GitHub repository named `week1-assessment`.
-- Created and worked on the `feature/analysis` branch.
-- Completed multiple small commits with descriptive messages.
-- Modified README.md on both branches to create a deliberate merge conflict.
-- Resolved the conflict through a Pull Request.
-- Merged the feature branch into `main`.
-- Captured the Git commit history using `git log --oneline --graph`.
+The following Git operations were performed as part of the assessment:
 
-## Submission Links
+1. Created a GitHub repository named `week1-assessment`.
+2. Created and worked on the `feature/analysis` branch.
+3. Completed multiple commits with descriptive commit messages.
+4. Modified `README.md` on both branches to intentionally create a merge conflict.
+5. Resolved the merge conflict through a Pull Request.
+6. Reviewed and merged the feature branch into `main`.
+7. Captured the Git commit history using `git log --oneline --graph`.
+
+### Useful Git Commands
+
+```bash
+# Check the current working tree status
+git status
+
+# Display all local branches
+git branch
+
+# Create and switch to the feature branch
+git checkout -b feature/analysis
+
+# Stage project changes
+git add .
+
+# Commit changes with a descriptive message
+git commit -m "Complete employee data analysis"
+
+# Display commit history in graph format
+git log --oneline --graph
+
+# Push the feature branch to GitHub
+git push -u origin feature/analysis
+```
+
+## 8. Technologies and Tools Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Programming and data analysis |
+| Pandas | Data manipulation and analysis |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Jupyter Notebook | Interactive Python development |
+| Git | Version control |
+| GitHub | Repository hosting and collaboration |
+| Terminal / PowerShell | Command execution and project management |
+
+## 9. Submission Links
 
 - **GitHub Repository:** https://github.com/kalyanasundar66/week1-assessment
 - **Pull Request:** https://github.com/kalyanasundar66/week1-assessment/pull/1
 
-## Conclusion
+## 10. Conclusion
 
-This project demonstrates practical experience with Git version control, terminal-based file management, Jupyter Notebook, Python data analysis, performance measurement, data visualization, and project documentation.
+Successfully completed the Week 1 assessment by implementing employee data analysis using Python, Pandas, NumPy, and Matplotlib.
+
+The project also demonstrates practical experience with Git version control, terminal-based file management, Jupyter Notebook, performance measurement, feature branching, commit history, Pull Requests, and merge conflict resolution.
+
+This assessment strengthened practical understanding of Python data analysis and collaborative software development workflows.
