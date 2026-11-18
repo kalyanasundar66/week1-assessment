@@ -1,7 +1,7 @@
 # Week 1 Assessment - Git, Terminal and Notebook
 
 ## Project Overview
-Employee Performance Analysis using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook.
+This project delivers a comprehensive employee performance and salary analysis using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook.
 
 ## Project Structure
 - data/ - Employee CSV dataset
