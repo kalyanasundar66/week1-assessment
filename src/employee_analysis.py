@@ -20,12 +20,16 @@
 
 
 # Import required libraries
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Load employee dataset
-df = pd.read_csv("../data/employees.csv")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "employees.csv")
+
+df = pd.read_csv(DATA_PATH)
 
 # Display first five records
 df.head()
@@ -81,7 +85,7 @@ print(department_salary)
 chennai_employees = df[df["city"] == "Chennai"]
 
 print("Employees from Chennai:")
-display(chennai_employees)
+print(chennai_employees.to_string(index=False))
 
 # Count Chennai employees
 print("\nTotal Chennai Employees:", len(chennai_employees))
@@ -98,8 +102,14 @@ print(
 
 # Measure execution time of department-wise salary calculation
 
-get_ipython().run_line_magic('timeit', 'df.groupby("department")["salary"].mean()')
+import timeit
 
+execution_time = timeit.timeit(
+    lambda: df.groupby("department")["salary"].mean(),
+    number=1000
+)
+
+print(f"Average execution time: {execution_time / 1000:.6f} seconds")
 
 # In[11]:
 
