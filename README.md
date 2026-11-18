@@ -1,6 +1,7 @@
 # Week 1 Assessment - Git, Terminal and Notebook
 
 ## Project Overview
+This project provides a basic employee salary analysis using Python and Pandas, maintained on the main branch.
 Employee Performance Analysis using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook.
 
 ## Project Structure
